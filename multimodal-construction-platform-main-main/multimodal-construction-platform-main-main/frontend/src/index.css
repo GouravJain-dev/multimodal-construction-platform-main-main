@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #070b14;
+  color: #e2e8f0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Minimalist Tactical Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e3050;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0ea5e9;
+}
+
+/* Custom Tactical Card Styles */
+.tactical-card {
+  background-color: #0d1527;
+  border: 1px solid #1e3050;
+  border-radius: 8px;
+}
+
+.tactical-inner {
+  background-color: #101c33;
+  border: 1px solid #1a2a47;
+  border-radius: 6px;
+}
+
+/* Bounding box animation & HUD accents */
+.hud-box {
+  position: absolute;
+  pointer-events: none;
+  transition: all 0.2s ease-in-out;
+}
